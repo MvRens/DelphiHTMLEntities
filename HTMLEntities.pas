@@ -14,11 +14,13 @@ type
 
 const
   // Source: https://www.freeformatter.com/html-entities.html
-  HTMLEntityList: array[0..224] of THTMLEntity =
+  // ...which was lacking &quot;, maybe I should cross-reference this with the HTML 5 specs...
+  HTMLEntityList: array[0..225] of THTMLEntity =
   (
     (Name: 'amp'; Value: #38), // Ampersand
     (Name: 'lt'; Value: #60), // Less-than
     (Name: 'gt'; Value: #62), // Greater than
+    (Name: 'quot'; Value: #34), // Quote
     (Name: 'Agrave'; Value: #192), // Capital a with grave accent
     (Name: 'Aacute'; Value: #193), // Capital a with acute accent
     (Name: 'Acirc'; Value: #194), // Capital a with circumflex accent
